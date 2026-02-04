@@ -1,0 +1,6 @@
+*.o
+luminosidade
+saidas-larissa/
+saidas-luminosidades-finais/
+.DS_Store
+.vscode/
