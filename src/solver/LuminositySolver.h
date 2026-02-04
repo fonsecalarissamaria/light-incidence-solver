@@ -6,10 +6,10 @@
 
 class LuminositySolver {
 public:
-    // Recebe a região já carregada com obstáculos e luzes
+    // recebe a região já carregada com obstáculos e luzes
     explicit LuminositySolver(const Region& region);
 
-    // Executa os cálculos e salva o relatório no arquivo de saída
+    // executa os cálculos e salva o relatório no arquivo de saída
     void solve(const std::string& exampleName) const;
 
 private:

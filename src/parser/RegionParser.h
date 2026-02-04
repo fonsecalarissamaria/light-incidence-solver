@@ -4,13 +4,13 @@
 #include <string>
 #include "Region.h"
 
-// Classe responsável por interpretar o arquivo de entrada e criar a cena
+// interpreta o arquivo de entrada e cria a cena
 class RegionParser {
 public:
-    // Construtor explícito para evitar conversões acidentais
+    // construtor 
     explicit RegionParser(const std::string& filename);
 
-    // Lê o arquivo e retorna a estrutura Region totalmente populada
+    // lê o arquivo e retorna a estrutura Region
     Region parse();
 
 private:
