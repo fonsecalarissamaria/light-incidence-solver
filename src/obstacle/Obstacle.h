@@ -3,6 +3,16 @@
 
 #include "../geometry/Point.h"
 
+/*
+    Arquivo: Obstacle.h
+    Propósito: Declara a classe base abstrata Obstacle para os diferentes tipos de obstáculos.
+    
+    Funcionalidades Principais:
+    - Definição da interface comum para obstáculos geométricos
+    - Declaração de métodos virtuais para interseção e contenção
+    - Armazenamento de identificador e taxa de redução de luminosidade
+ */
+
 struct Segment;
 
 class Obstacle {

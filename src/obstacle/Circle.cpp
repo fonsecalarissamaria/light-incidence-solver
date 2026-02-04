@@ -1,6 +1,16 @@
 #include "Circle.h"
 #include "../geometry/GeometryUtils.h"
 
+/*
+    Arquivo: Circle.cpp
+    Propósito: Implementa o obstáculo circular e sua lógica de interseção.
+    
+    Funcionalidades Principais:
+    - Inicialização de obstáculos circulares
+    - Cálculo de interseções entre raios e círculos
+    - Verificação de pertencimento de um ponto ao círculo
+ */
+
 Circle::Circle(int id, double rate, const Point& center, double radius)
     : Obstacle(id, rate), center(center), radius(radius) {}
 

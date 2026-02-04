@@ -10,11 +10,26 @@
 #include "parser/RegionParser.h"
 #include "solver/LuminositySolver.h"
 
-// Configurações Globais
+/*
+    Arquivo: main.cpp
+    Propósito: Arquivo principal do sistema. Responsável por fazer
+               a leitura dos arquivos de entrada, o processamento das regiões
+               e a execução do cálculo de luminosidade.
+
+    Funcionalidades:
+    - Gerenciar diretórios de entrada e saída
+    - Ler os exemplos disponíveis
+    - Interpretar arquivos de descrição de regiões
+    - Executar o cálculo de luminosidade para cada cenário
+    - Gerar arquivos de debug e relatórios finais
+ */
+
+
+// configurações globais
 const std::string INPUT_DIR_NAME = "exemplos";
 const std::string OUTPUT_DIR_NAME = "saidas-regioes"; // teste para visualizar a região 
 
-// Funções Auxiliares de Sistema:
+// Funções auxiliares de sistema:
 
 // código para garantir o diretório de saída, a fim de conferir os resultados 
 void ensureDirectoryExists(const std::string& path) {
@@ -31,7 +46,7 @@ void ensureDirectoryExists(const std::string& path) {
     }
 }
 
-// Funções de debug
+// Funções de debug:
 
 // gera um arquivo de texto com o estado atual da região para validação
 void debugExportRegion(const Region& region, const std::string& outputFile) {
@@ -63,7 +78,7 @@ void debugExportRegion(const Region& region, const std::string& outputFile) {
     std::cout << "Arquivo gerado: " << outputFile << std::endl;
 }
 
-// leitura de Diretório:
+// Leitura de diretório:
 
 // retorna lista filtrada e ordenada dos exemplos
 std::vector<std::string> getExampleList(const std::string& basePath) {
@@ -109,7 +124,6 @@ int main() {
     for (const auto& nomeExemplo : exemplos) {
         std::string inputPath = INPUT_DIR_NAME + "/" + nomeExemplo + "/regiao.txt";
         
-        //std::cout << "\n--------------------------------------------------" << std::endl;
         std::cout << "\nProcessando: " << nomeExemplo << std::endl;
 
         // parsing
@@ -125,6 +139,5 @@ int main() {
         solver.solve(nomeExemplo);
     }
 
-    //std::cout << "\n=== CONCLUIDO COM SUCESSO ===" << std::endl;
     return 0;
 }

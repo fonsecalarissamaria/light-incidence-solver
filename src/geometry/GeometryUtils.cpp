@@ -3,6 +3,17 @@
 #include <algorithm>
 #include <limits>
 
+/*
+    Arquivo: GeometryUtils.cpp
+    Propósito: Implementa funções utilitárias de geometria essenciais para os cálculos
+    
+    Funcionalidades Principais:
+    - Cálculo de distâncias 
+    - Detecção de interseção entre segmentos de reta
+    - Cálculo de interseções entre segmento e círculo
+    - Tratamento de precisão de ponto flutuante (EPSILON) para casos de tangência
+ */
+
 namespace GeometryUtils {
 
     // Tolerância para lidar com imprecisões de ponto flutuante (usei para encontrar tangentes)

@@ -3,6 +3,17 @@
 #include <cmath>
 #include <algorithm>
 
+/*
+    Arquivo: Line.cpp
+    Propósito: Implementa o obstáculo linear e sua lógica de interseção.
+    
+    Funcionalidades Principais:
+    - Inicialização de obstáculos do tipo linha
+    - Cálculo de interseções entre raios e segmentos de reta
+    - Verificação de pertencimento de um ponto à linha
+ */
+
+
 // tolerância para evitar erros de ponto flutuante
 static const double EPSILON = 1e-5;
 

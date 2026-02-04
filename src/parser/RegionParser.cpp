@@ -1,8 +1,17 @@
 #include "RegionParser.h"
-
 #include <fstream>
 #include <sstream>
 #include <iostream>
+
+/*
+    Arquivo: RegionParser.cpp
+    Propósito: Implementa o parser responsável por carregar uma região a partir de arquivo.
+    
+    Funcionalidades Principais:
+    - Leitura e interpretação do arquivo de entrada
+    - Criação de obstáculos, fontes de luz e pontos de consulta
+    - Montagem da estrutura Region a partir dos comandos lidos
+ */
 
 RegionParser::RegionParser(const std::string& filename)
     : filename(filename) {}

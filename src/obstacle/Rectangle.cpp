@@ -4,6 +4,17 @@
 #include <cmath>
 #include <algorithm>
 
+/*
+    Arquivo: Rectangle.cpp
+    Propósito: Implementa o obstáculo retangular e sua lógica de interseção.
+    
+    Funcionalidades Principais:
+    - Inicialização de obstáculos retangulares a partir de origem, largura e altura
+    - Cálculo de interseções entre raios e as arestas do retângulo
+    - Tratamento de casos de quinas e bordas com tolerância numérica
+    - Verificação de pertencimento de um ponto ao retângulo
+ */
+
 // tolerância para quinas e bordas
 static const double EPSILON = 1e-5;
 

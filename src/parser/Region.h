@@ -7,6 +7,15 @@
 #include "../light/LightSource.h"
 #include "../obstacle/Obstacle.h"
 
+/*
+    Arquivo: Region.h
+    Propósito: Declara a estrutura responsável por representar uma região do cenário.
+    
+    Funcionalidades Principais:
+    - Armazenamento de fontes de luz, obstáculos e pontos de consulta
+    - Interface para adição dos elementos que compõem o ambiente
+ */
+
 // armazena os pontos onde será calculado a luz
 struct PointQuery {
     int id;

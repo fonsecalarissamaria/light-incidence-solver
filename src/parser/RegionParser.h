@@ -4,6 +4,17 @@
 #include <string>
 #include "Region.h"
 
+/*
+    Arquivo: RegionParser.h
+    Propósito: Declara a classe responsável por interpretar o arquivo de entrada
+               e construir a estrutura da cena (Region).
+
+    Responsabilidades:
+    - Armazenar o nome do arquivo de entrada
+    - Realizar o parsing do arquivo
+    - Retornar a região construída
+ */
+
 // interpreta o arquivo de entrada e cria a cena
 class RegionParser {
 public:

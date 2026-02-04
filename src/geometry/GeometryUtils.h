@@ -4,6 +4,17 @@
 #include "Point.h"
 #include "Segment.h"
 
+/*
+    Arquivo: GeometryUtils.h
+    Propósito: Declara funções utilitárias de geometria usadas nos cálculos 
+    
+    Funcionalidades Principais:
+    - Cálculo de distâncias entre pontos
+    - Cálculo da distância entre ponto e segmento
+    - Verificação de interseção entre segmentos de reta
+    - Cálculo de interseções entre segmento e círculo
+ */
+
 namespace GeometryUtils {
 
     // Calcula a distância Euclidiana entre dois pontos

@@ -4,6 +4,16 @@
 #include "../obstacle/Line.h"
 #include "../geometry/Segment.h"
 
+/*
+    Arquivo: Region.cpp
+    Propósito: Implementa a construção e o gerenciamento dos elementos de uma região.
+    
+    Funcionalidades Principais:
+    - Adição de obstáculos geométricos (retângulos, círculos e linhas)
+    - Adição de fontes de luz à região
+    - Adição de pontos de consulta para cálculo de luminosidade
+ */
+
 // Adição dos obstáculos: 
 
 void Region::addRectangle(int id, int reduction, int x, int y, int height, int width) {

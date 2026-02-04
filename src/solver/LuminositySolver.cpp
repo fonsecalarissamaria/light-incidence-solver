@@ -6,6 +6,18 @@
 #include <cmath>
 #include <sys/stat.h> 
 
+/*
+    Arquivo: LuminositySolver.cpp
+    Propósito: Implementa a lógica de cálculo da luminosidade final em cada
+               ponto da região, considerando fontes de luz e obstáculos.
+
+    Responsabilidades:
+    - Garantir a existência do diretório de saída
+    - Calcular o fator de redução de luz causado por obstáculos
+    - Somar as contribuições de todas as fontes de luz
+    - Gerar o arquivo final com os valores de luminosidade por ponto
+ */
+
 // garante que o diretório de saída existe 
 static void ensureDirectoryExists(const std::string& path) {
     struct stat info;
