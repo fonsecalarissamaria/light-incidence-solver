@@ -12,7 +12,7 @@
 
 // Configurações Globais
 const std::string INPUT_DIR_NAME = "exemplos";
-const std::string OUTPUT_DIR_NAME = "saidas-larissa"; // teste para visualizar a região 
+const std::string OUTPUT_DIR_NAME = "saidas-regioes"; // teste para visualizar a região 
 
 // Funções Auxiliares de Sistema:
 

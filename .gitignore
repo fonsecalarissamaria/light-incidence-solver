@@ -1,6 +1,6 @@
 *.o
 luminosidade
-saidas-larissa/
+saidas-regioes/
 saidas-luminosidades-finais/
 .DS_Store
 .vscode/
